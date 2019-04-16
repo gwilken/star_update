@@ -1,4 +1,5 @@
 let request = require('request')
+let key = require('./auth/secret')
 
 const verifytoken = (token, cb) => {
   request.post({
@@ -22,7 +23,8 @@ const getToken = (cb) => {
       url: 'https://starlight.gwilken.com/api/gettoken',
       json: true,
       body: {
-        "username": "greg"
+        "username": "greg",
+        key
       }
     }, ((err, res) => {
         if(err) {

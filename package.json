@@ -1,0 +1,23 @@
+{
+  "name": "star_update",
+  "version": "0.0.1",
+  "description": "Starlight device updater",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gwilken/star_update.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gwilken/star_update/issues"
+  },
+  "homepage": "https://github.com/gwilken/star_update#readme",
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  }
+}

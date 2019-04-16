@@ -22,8 +22,7 @@ const getToken = (cb) => {
       url: 'https://starlight.gwilken.com/api/gettoken',
       json: true,
       body: {
-        "username": "greg",
-        "password": "test"
+        "username": "greg"
       }
     }, ((err, res) => {
         if(err) {

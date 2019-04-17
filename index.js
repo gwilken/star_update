@@ -12,7 +12,7 @@ const verifytoken = (token, cb) => {
       console.log('Error:', err)
     }
 
-    cb(res.statusCode)
+    cb(res.statusCode, token)
   })
 }
 
@@ -41,8 +41,8 @@ const getToken = (cb) => {
 }
 
  function checkApi() {
-  getToken((res) => {
-    console.log(res)
+  getToken((res, token) => {
+    console.log(res, token)
   })
 }
 
